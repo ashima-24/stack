@@ -3,21 +3,29 @@
 using namespace std;
 int main() {
 	cout<<"Hi from main\n ";
-    std::vector<int>b;
-    b.push_back(10);
+int a[5]={1,2,3,4,5};
+int b=22,val;
+for(int k=0;k<b;k++)
+{ val=a[0];
+for(int i=0;i<5;i++)
+{
+
+if (i==4)
+{
+    a[i]=val;
+    break;
+
+}
+a[i]=a[i+1];
+
+}
+
+
+}
+for(int j=0;j<5;j++)
+cout<<a[j]<<"\n";
     
-    std::vector<int> a;
-/*while(i<5)
-{
-    std::cin>>val;
-a.push_back(val);
-i++;
-}
-for(i=0;i<5;i++)
-{
-    std::cout<<a[i]<<"\n";
-    std::cout<<a.size();
-}
+    /*
 
 int a;
 int *p;
